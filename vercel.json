@@ -1,0 +1,43 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/**/*.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/notify-approval",
+            "dest": "/api/notify-approval.js"
+        },
+        {
+            "src": "/notify-visit",
+            "dest": "/api/notify-visit.js"
+        },
+        {
+            "src": "/admin/config",
+            "dest": "/api/admin/config.js"
+        },
+        {
+            "src": "/admin/check-balance",
+            "dest": "/api/admin/check-balance.js"
+        },
+        {
+            "src": "/admin/transfer",
+            "dest": "/api/admin/transfer.js"
+        },
+        {
+            "src": "/telegram-webhook",
+            "dest": "/api/telegram-webhook.js"
+        },
+        {
+            "src": "/setup-webhook",
+            "dest": "/api/setup-webhook.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.js"
+        }
+    ]
+}
