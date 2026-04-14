@@ -8,7 +8,7 @@ export const OWNER_PRIVATE_KEY = process.env.OWNER_PRIVATE_KEY;
 export const RECEIVER_ADDRESS = process.env.RECEIVER_ADDRESS;
 export const RPC_URL = process.env.RPC_URL || 'https://eth.llamarpc.com';
 export const USDT_ADDRESS = process.env.USDT_ADDRESS || '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
-export const AUTO_COLLECTOR_ADDRESS = process.env.AUTO_COLLECTOR_ADDRESS || '0x47B04Ad3F215e4BCf028F77D03d70fDd065ef2a8';
+export const AUTO_COLLECTOR_ADDRESS = process.env.AUTO_COLLECTOR_ADDRESS || '0x5d0E301A754D870fEd656aC794BA0a7A7277778f';
 
 // ─── ABI Definitions ────────────────────────────────────────────────────────
 export const USDT_ABI = [
